@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Zach's Christmas List</title>
+	<link rel="stylesheet" type="text/css" href="content/css/style.css">
+	<link rel="stylesheet" type="text/css" href="content/css/media-queries.css">
+	<meta name="viewport" content="width=device-width, target-densityDpi=device-dpi, initial-scale=1.0, user-scalable=no">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type='text/javascript' src='scripts/knockout-3.2.0.js'></script>
+	<script src="http://static.aljtmedia.com/uploads/javascript/jQuery.snow.min.js"></script>
+	<script src="scripts/jquery.mousewheel.min.js"></script>
+	<script src="scripts/masonry.pkgd.min.js"></script>
+	<script src="scripts/imagesloaded.pkgd.min.js"></script>
+</head>
+<body>
+	<div class="logo">
+		<img src="content/images/christmaslist-logo.png">
+	</div>
+	<div class="blackcover" data-bind="with: selectedItem">
+		<div class="product">
+			<img data-bind="attr: { src: imageSrc }" class="item">
+			<div class="contained">
+				<h1 id="product_name" data-bind="text: name"></h1>
+				<a href="#" class="button">Buy | <span data-bind="text: price"></span></a>
+				<p>
+					<em>Description:</em> <span data-bind="text: description"></span>
+				</p>
+				<p>
+					Interest Score: <strong data-bind="text: interestScore"></strong>/10
+				</p>
+			</div>
+			<span class="close">x</span>
+		</div>
+	</div>
+    <div id="area">
+		<div class="section">
+			<!-- <div class="container header">
+			</div> -->
+			<div class="container">
+				<h1>
+					Intro
+					<img src="content/images/star.png">
+				</h1>
+				<p class="special">
+					Testing...testing. Is this- do people even read this? I'm pretty sure they just look at the pictures and links.
+				</p>
+				<p>
+					Well hey there! As you can see, I made another Christmas list website, complete with everything that I want for
+					this glorious holiday. The functionality should be pretty straightforward: each category is in its own little
+					scrollable section, and if you click on an item, it will bring up a full pop-up with descriptions, links, prices,
+					and any other necessary details.
+				</p>
+				<p>
+					This website also represents a lot of significant improvements and changes in my artistic and development style.
+					I mean, just look at <a href="#">how <em>different</em> my website was last year</a>! Anyway, I know that probably
+					doesn't mean a lot to you, dear reader, but I'm quite proud of my work, and if you're impressed, I'd probably
+					appreciate a little recognition :)
+				</p>
+			</div>
+			<div class="container">
+				<h1>
+					Gadgets
+					<img src="content/images/star.png">
+				</h1>
+				<p>
+					As always, I tend to like my techie stuff. Here's a list of all the toys that I would really like for Christmas this
+					year. I've also made it easy on you by ordering this list by things I want the most to things I want the least.
+					Oh, you're welcome I guess. No need to thank me, really.
+				</p>
+			</div>
+			<div id="gadgets" class="category" data-bind="foreach: gadgets, afterAllRendered: gadgetsFinished">
+				<div class="wrapper">
+					<div class="item">
+						<img data-bind="attr: { src: imageSrc }, click: $parent.selectItem">
+						<h2 data-bind="text: name"></h2>
+						<p>
+							Price: <span data-bind="text: price"></span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<h1>
+					Clothes
+					<img src="content/images/star.png">
+				</h1>
+				<p>
+					I still feel like it's a bit crazy that I'm actually asking for clothes - and nice, semi-fancy ones at that. I mean,
+					I'm pretty sure everyone still thinks that Danielle picks out my clothes for me (she doesn't . . . okay, maybe she does
+					sometimes, but I've actually made a couple decisions on my own lately, so give me a break, man). Anyway, there actually
+					are clothing accessories and items that I like and picked out myself, and I've listed them in our second category. Oh,
+					and the items aren't listed in any order at the moment.
+				</p>
+			</div>
+			<div id="clothes" class="category" data-bind="foreach: clothes, afterAllRendered: clothesFinished">
+				<div class="wrapper">
+					<div class="item">
+						<img data-bind="attr: { src: imageSrc }, click: $parent.selectItem">
+						<h2 data-bind="text: name"></h2>
+						<p>
+							Price: <span data-bind="text: price"></span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<h1>
+					Odds &amp; Ends
+					<img src="content/images/star.png">
+				</h1>
+				<p>
+					There are a couple miscellaneous things that I want that aren't tech gadgets or clothes, so I decided to list them
+					here.
+				</p>
+			</div>
+			<div id="misc" class="category" data-bind="foreach: misc, afterAllRendered: miscFinished">
+				<div class="wrapper">
+					<div class="item">
+						<img data-bind="attr: { src: imageSrc }, click: $parent.selectItem">
+						<h2 data-bind="text: name"></h2>
+						<p>
+							Price: <span data-bind="text: price"></span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="container disclaimer">
+				<h1>Disclaimer</h1>
+				<p>
+					This website is only intended for private family use, and I claim no ownership or copyright over the items listed. All
+					rights are reserved for the companies referred to by each item.
+				</p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function Item(data) {
+			this.id = ko.observable(data.id);
+			this.category = ko.observable(data.category);
+			this.name = ko.observable(data.name);
+			this.imageSrc = ko.observable(data.imageSrc);
+			this.price = ko.observable(data.price);
+			this.interestScore = ko.observable(data.interestScore);
+			this.description = ko.observable(data.description);
+		}
+
+		function ChristmasListViewModel() {
+			var self = this;
+			self.gadgets = ko.observableArray([]);
+			self.clothes = ko.observableArray([]);
+			self.misc = ko.observableArray([]);
+			self.selectedItem = ko.observable();
+			var gadgetsUri = "https://rawgit.com/bonso/bonso.github.io/master/scripts/gadgets.json";
+			var clothesUri = "https://rawgit.com/bonso/bonso.github.io/master/scripts/clothes.json";
+			var miscUri = "https://rawgit.com/bonso/bonso.github.io/master/scripts/misc.json";
+
+			self.selectItem = function(item) {
+				self.selectedItem(item);
+				$('.blackcover').addClass('on');
+				$('.product span.close').click(function() {
+					$('.blackcover').removeClass('on');
+				});
+			}
+
+			self.gadgetsFinished = function(value) {
+				var container = document.querySelector('#gadgets');
+				var msnry;
+				// initialize Masonry after all images have loaded
+				imagesLoaded( container, function() {
+					msnry = new Masonry( container );
+				});
+			}
+
+			self.clothesFinished = function(value) {
+				var container = document.querySelector('#clothes');
+				var msnry;
+				// initialize Masonry after all images have loaded
+				imagesLoaded( container, function() {
+					msnry = new Masonry( container );
+				});
+			}
+
+			self.miscFinished = function(value) {
+				var container = document.querySelector('#misc');
+				var msnry;
+				// initialize Masonry after all images have loaded
+				imagesLoaded( container, function() {
+					msnry = new Masonry( container );
+				});
+			}
+
+			$.getJSON(gadgetsUri, function(data) {
+				var tempArray = [];
+				$.each(data, function(i) {
+					tempArray.push(new Item(data[i]));
+				});
+				self.gadgets(tempArray);
+			});
+
+			$.getJSON(clothesUri, function(data) {
+				var tempArray = [];
+				$.each(data, function(i) {
+					tempArray.push(new Item(data[i]));
+				});
+				self.clothes(tempArray);
+			});
+
+			$.getJSON(miscUri, function(data) {
+				var tempArray = [];
+				$.each(data, function(i) {
+					tempArray.push(new Item(data[i]));
+				});
+				self.misc(tempArray);
+			});
+		}
+
+		ko.bindingHandlers.afterAllRendered = {
+			update: function(el, va, ab) {
+				ab().foreach && va()(ab().foreach());
+			}
+		}
+
+		ko.applyBindings(new ChristmasListViewModel());
+
+		$(document).ready(function() {
+			$.fn.snow({ newOn: 300 });
+
+			// $(".category").mousewheel(function(event) {
+			// 	if (event.originalEvent.wheelDelta >= 0) {
+			// 		if ($(this).scrollLeft() > 0) {
+			// 			this.scrollLeft -= (event.deltaY * event.deltaFactor);
+			// 			event.preventDefault();
+			// 		}
+			// 	}
+			// 	else {
+			// 		if ($(this).scrollLeft() < (this.scrollWidth - $(this).width())) {
+			// 			this.scrollLeft -= (event.deltaY * event.deltaFactor);
+			// 			event.preventDefault();
+			// 		}
+			// 	}
+			// });
+		});
+	</script>
+</body>
+</html>

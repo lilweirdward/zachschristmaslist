@@ -1,0 +1,64 @@
+@import 'compass/css3';
+@import '../bourbon/bourbon';
+
+$main-font-stack: 'Source Sans Pro', sans-serif;
+$header-font-stack: 'Fredericka the Great', cursive;
+$green: #3C8D0D;
+$myspecialblack: #232323;
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 80%;
+    }
+
+    .category {
+        .wrapper {
+            width: 33%;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    div.logo {
+        img {
+            height: auto;
+            width: 90%;
+        }
+    }
+
+    .category {
+        .wrapper {
+            width: 50%;
+            .item {
+                h2 {
+                    font-size: 1.15rem;
+                }
+            }
+        }
+    }
+
+    .blackcover {
+        .product {
+            .item {
+                float: none;
+                width: 90%;
+            }
+            .contained {
+                float: none;
+                width: 90%;
+                .button {
+                    font-size: 1rem;
+                    margin: 0.75rem 0;
+                }
+                span.social {
+                    width: 80%;
+                    margin: 0.5rem 0;
+                }
+            }
+        }
+    }
+}

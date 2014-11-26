@@ -1,0 +1,43 @@
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 80%;
+  }
+
+  .category .wrapper {
+    width: 33%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  div.logo img {
+    height: auto;
+    width: 90%;
+  }
+
+  .category .wrapper {
+    width: 50%;
+  }
+  .category .wrapper .item h2 {
+    font-size: 1.15rem;
+  }
+
+  .blackcover .product .item {
+    float: none;
+    width: 90%;
+  }
+  .blackcover .product .contained {
+    float: none;
+    width: 90%;
+  }
+  .blackcover .product .contained .button {
+    font-size: 1rem;
+    margin: 0.75rem 0;
+  }
+  .blackcover .product .contained span.social {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+}

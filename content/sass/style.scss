@@ -1,0 +1,236 @@
+@import 'compass/css3';
+@import '../bourbon/bourbon';
+
+$main-font-stack: 'Source Sans Pro', sans-serif;
+$header-font-stack: 'Fredericka the Great', cursive;
+$green: #3C8D0D;
+$myspecialblack: #232323;
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+    background-image: url('../images/stardust-background.png');
+    background-attachment: fixed;
+	font-family: $main-font-stack;
+    text-rendering: optimizeLegibility;
+    font-size: 100%;
+	letter-spacing: 1.25px;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+    font-family: $header-font-stack;
+	font-size: 3.75rem;
+    text-align: center;
+    position: relative;
+    img {
+        display: inline-block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 1rem;
+    }
+}
+
+a {
+	color: green;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+div.logo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 80%;
+        width: auto;
+        margin: auto;
+    }
+}
+
+#area {
+    position: relative;
+    width: 90%;
+    margin: 5rem auto;
+    top: 100%;
+    margin-top: 0;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.85) 0 0 0.5rem;
+}
+
+.section {
+    padding: 5rem 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container.disclaimer {
+	h1 {
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 0.85rem;
+	}
+}
+
+.category {
+	width: 100%;
+	box-shadow: inset rgba(0,0,0,0.85) 0 0 0.5rem;
+	background-color: #919191;
+	position: relative;
+	.wrapper {
+		width: 25%;
+		box-sizing: border-box;
+		.item {
+			padding: 0.5rem 0;
+			margin: 0.5rem;
+			text-align: center;
+			background-color: #ececec;
+			@include transition(box-shadow 0.25s ease-in);
+			img {
+				width: 95%;
+			}
+			h2 {
+				margin: 0.25rem;
+				font-size: 1.5rem;
+				font-weight: 400;
+				cursor: pointer;
+			}
+			h2:hover {
+				text-decoration: underline;
+			}
+			p {
+				text-align: center;
+				margin: 0.25rem;
+				font-size: 0.825rem;
+			}
+		}
+		.item:hover {
+			box-shadow: rgba(0,0,0,0.85) 0 0 0.75rem;
+		}
+	}
+}
+
+.blackcover {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.6);
+	opacity: 0;
+	@include transition(opacity 0.4s ease-out);
+	z-index: -1;
+	.product {
+		box-sizing: border-box;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		width: 80%;
+		margin: 5rem auto;
+		padding: 2rem 3rem;
+		text-align: center;
+		background-color: white;
+		box-shadow: rgba(0,0,0,0.85) 0 0 1rem;
+		overflow-y: scroll;
+		z-index: 5;
+		.item {
+			float: left;
+			width: 40%;
+			max-height: 80%;
+			margin: 0 5%;
+		}
+		.contained {
+			padding: 2rem 0;
+			width: 50%;
+			float: right;
+			h1 {
+				margin: 0;
+				font-size: 3rem;
+			}
+			.button {
+				margin: 1rem 0;
+				color: black;
+			}
+			p {
+				text-align: justify;
+			}
+			span.social {
+				display: inline-block;
+				box-sizing: border-box;
+				width: 30%;
+				margin: 0 1%;
+				padding: 0.75rem 0.5rem;
+				text-align: right;
+				background-color: black;
+				color: white;
+			}
+		}
+		span.close {
+			position: absolute;
+			top: 1rem;
+			right: 2rem;
+			cursor: pointer;
+			font-size: 1.75rem;
+		}
+	}
+}
+
+.blackcover.on {
+	opacity: 1;
+	z-index: 4;
+}
+
+p.special {
+	font-style: italic;
+	font-size: 0.75rem;
+}
+
+.button {
+	display: inline-block;
+	font-size: 2rem;
+	font-weight: normal;
+	padding: 1rem 4rem;
+	background-color: transparent;
+	border: 0.125rem solid $myspecialblack;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	@include transition(all 0.25s);
+}
+
+.button:hover {
+	background-color: $green;
+	text-decoration: none;
+}
+
+#flake {
+    z-index: -1;
+}

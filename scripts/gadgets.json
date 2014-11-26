@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "category": "g",
+        "name": "Droid Turbo",
+        "imageSrc": "http://www.technobuffalo.com/wp-content/uploads/2014/10/Motorola-Droid-Turbo-Verizon-5-1280x853.jpg",
+        "price": "It's Complicated",
+        "interestScore": 10,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 2,
+        "category": "g",
+        "name": "Xbox One",
+        "imageSrc": "http://compass.xbox.com/assets/94/60/946002c9-dfc7-44fe-b20a-abf175c49d42.jpg?n=og-share-meet-xbox-one-955x955.jpg",
+        "price": "$349.99",
+        "interestScore": 7,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 3,
+        "category": "g",
+        "name": "Fitbit Charge",
+        "imageSrc": "https://static1.fitbit.com/simple.b-cssdisabled-png.h1b5eeed389c93a00f375564cdec89e54.pack?items=%2Fcontent%2Fassets%2Fcharge%2Fimages%2Fslide-01-charge.png",
+        "price": "$129.95",
+        "interestScore": 9,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 4,
+        "category": "g",
+        "name": "Fitbit Aria",
+        "imageSrc": "http://g-ecx.images-amazon.com/images/G/01/hpc/detail-page/c26-B0077L8YOO-1-l.jpg",
+        "price": "$129.95",
+        "interestScore": 6,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 5,
+        "category": "g",
+        "name": "Apple Magic Mouse",
+        "imageSrc": "http://store.storeimages.cdn-apple.com/4205/as-images.apple.com/is/image/AppleInc/aos/published/images/M/B8/MB829/MB829?wid=800&hei=800&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1400690353435",
+        "price": "$69.00",
+        "interestScore": 5,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 6,
+        "category": "g",
+        "name": "Apple USB SuperDrive",
+        "imageSrc": "http://store.storeimages.cdn-apple.com/4205/as-images.apple.com/is/image/AppleInc/aos/published/images/M/D5/MD564/MD564?wid=800&hei=800&fmt=jpeg&qlt=80&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1400693447662",
+        "price": "$79.00",
+        "interestScore": 5,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 7,
+        "category": "g",
+        "name": "HP Officejet 4630 e-All-in-One Printer",
+        "imageSrc": "http://store.storeimages.cdn-apple.com/4205/as-images.apple.com/is/image/AppleInc/aos/published/images/H/GM/HGM82/HGM82?wid=800&hei=800&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1410570037226",
+        "price": "$99.95",
+        "interestScore": 4,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 8,
+        "category": "g",
+        "name": "Cooler Master JAS PRO Foldable Aluminum Stand for MacBook Pro",
+        "imageSrc": "http://store.storeimages.cdn-apple.com/4205/as-images.apple.com/is/image/AppleInc/aos/published/images/H/A0/HA009/HA009?wid=800&hei=800&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1400796631644",
+        "price": "$69.95",
+        "interestScore": 5,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 9,
+        "category": "g",
+        "name": "Sennheiser Urbanite Over-Ear Headphones",
+        "imageSrc": "http://sennheiser-urbanite.com/images/rotator/over/black.png",
+        "price": "$249.95",
+        "interestScore": 5,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 10,
+        "category": "g",
+        "name": "Moto 360",
+        "imageSrc": "http://cdn-www.xda-developers.com/wp-content/uploads/2014/09/moto-360-smartwatch-580-90.jpg",
+        "price": "$249.99",
+        "interestScore": 3,
+        "description": "I'll fill this out later once I realize this actually works."
+    }
+]

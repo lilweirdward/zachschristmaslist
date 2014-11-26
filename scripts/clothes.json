@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "category": "c",
+        "name": "Men's Timberland® Lined Roll-Top Boots",
+        "imageSrc": "http://tbl.imageg.net/graphics/product_images/pTBL1-17110852v275.jpg",
+        "price": "$165.00",
+        "interestScore": 6,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 2,
+        "category": "c",
+        "name": "Nike Air Force 1 Low - All White",
+        "imageSrc": "http://images.champssports.com/is/image//EBFL/24300657_fr_sc7_whwh?hei=2000&wid=2000",
+        "price": "$89.99",
+        "interestScore": 7,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 3,
+        "category": "c",
+        "name": "Express Stretch Cotton Photographer Dress Pant",
+        "imageSrc": "http://images.express.com/is/image/expressfashion/new_35_383_3120_539_45?cache=on&wid=640&fmt=jpeg&qlt=70,1&resmode=sharp2&op_usm=1,1,5,0&fit=fit,1",
+        "price": "$69.90",
+        "interestScore": 7,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 4,
+        "category": "c",
+        "name": "Nike Air Force 1 Mid - Black & White",
+        "imageSrc": "http://images.champssports.com/pi/15123020/zoom/nike-air-force-1-mid-mens",
+        "price": "$85.49",
+        "interestScore": 6,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 5,
+        "category": "c",
+        "name": "Beanies",
+        "imageSrc": "http://cdn.shopify.com/s/files/1/0072/6302/products/huf_hol14_mixed_pom_beanie_black_1024_medium.jpg?v=1414691325",
+        "price": "$28.00",
+        "interestScore": 6,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 6,
+        "category": "c",
+        "name": "Men's Earthkeepers® 6-Inch Panel Boots",
+        "imageSrc": "http://tbl.imageg.net/graphics/product_images/pTBL1-17109372v275.jpg",
+        "price": "$140.00",
+        "interestScore": 5,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 7,
+        "category": "c",
+        "name": "Jordan Flight 45 V",
+        "imageSrc": "http://images.champssports.com/is/image//EBFL/83366020_fr_jordan_sc7?hei=2000&wid=2000",
+        "price": "$79.99",
+        "interestScore": 7,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 8,
+        "category": "c",
+        "name": "Stock Box Sweatpant",
+        "imageSrc": "http://d2m6i8k1q2o9d5.cloudfront.net/us/media/catalog/product/cache/1/image/538x707/9df78eab33525d08d6e5fb8d27136e95/1/9/195014_MARO_3.jpg",
+        "price": "$55.00",
+        "interestScore": 7,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 9,
+        "category": "c",
+        "name": "Long-sleeved Apparel",
+        "imageSrc": "http://images.express.com/is/image/expressfashion/new_22_532_5604_058_48?cache=on&wid=640&fmt=jpeg&qlt=70,1&resmode=sharp2&op_usm=1,1,5,0&fit=fit,1",
+        "price": "$59.90",
+        "interestScore": 5,
+        "description": "Have I ever mentioned that I really hate commas?"
+    },
+    {
+        "id": 10,
+        "category": "c",
+        "name": "Jordan AJ Future",
+        "imageSrc": "http://images.champssports.com/is/image//EBFL/56503021_fr_jordan_sc7?hei=2000&wid=2000",
+        "price": "$149.99",
+        "interestScore": 6,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 11,
+        "category": "c",
+        "name": "Logan Coated Lounge Pants",
+        "imageSrc": "http://i.imgur.com/VgCflMp.png",
+        "price": "$89.50",
+        "interestScore": 6,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 12,
+        "category": "c",
+        "name": "Nice Watch (Fossil)",
+        "imageSrc": "http://s7d2.fossil.com/is/image/FossilPartners/JR1401-alt?$fossilResponsive_thumb$&wid=267&hei=267",
+        "price": "$165.00",
+        "interestScore": 4,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 13,
+        "category": "c",
+        "name": "New Jeans",
+        "imageSrc": "http://www.torontolife.com/wp-content/uploads/2013/02/mens-jeans-toronto.jpg",
+        "price": "Pricey",
+        "interestScore": 4,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 14,
+        "category": "c",
+        "name": "Basketball Shorts",
+        "imageSrc": "http://www.dickssportinggoods.com/graphics/product_images/pDSP1-17607566p275w.jpg",
+        "price": "$29.99",
+        "interestScore": 4,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 15,
+        "category": "c",
+        "name": "Things I Don't Want/Need",
+        "imageSrc": "http://michellgroup.com/wp-content/uploads/2014/10/Warning1_MCG.png",
+        "price": "n/a",
+        "interestScore": 0,
+        "description": "I'll fill this out later once I realize this actually works."
+    }
+]

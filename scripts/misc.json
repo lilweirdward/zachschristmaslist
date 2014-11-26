@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "category": "m",
+        "name": "Louisville City FC Season Tickets",
+        "imageSrc": "http://www.louisvillecityfc.com/images/founding-member.png",
+        "price": "$50+130",
+        "interestScore": 8,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 2,
+        "category": "m",
+        "name": "UK Wildcats Mens Basketball Tickets",
+        "imageSrc": "http://grfx.cstv.com/schools/kty/graphics/2013/tix13_0606_section_header.jpg",
+        "price": "$37-as expensive as you could imagine",
+        "interestScore": 7,
+        "description": "I'll fill this out later once I realize this actually works."
+    },
+    {
+        "id": 3,
+        "category": "m",
+        "name": "Dry-Erase Board",
+        "imageSrc": "http://images.costco-static.com/image/media/500-629104-847__1.jpg",
+        "price": "$51.99",
+        "interestScore": 5,
+        "description": "I'll fill this out later once I realize this actually works."
+    }
+]
