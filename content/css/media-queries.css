@@ -24,9 +24,17 @@
     font-size: 1.15rem;
   }
 
+  .blackcover .product {
+    position: relative;
+  }
   .blackcover .product .item {
     float: none;
-    width: 90%;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
   }
   .blackcover .product .contained {
     float: none;
