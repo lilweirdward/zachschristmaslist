@@ -25,27 +25,40 @@
   }
 
   .blackcover .product {
-    position: relative;
+    margin: 2rem auto;
   }
   .blackcover .product .item {
-    float: none;
-    position: relative;
+    float: left;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    max-height: 15rem;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
   }
   .blackcover .product .contained {
-    float: none;
+    float: left;
     width: 90%;
+    margin-top: 12rem;
+  }
+  .blackcover .product .contained h1 {
+    font-size: 1.5rem;
   }
   .blackcover .product .contained .button {
     font-size: 1rem;
     margin: 0.75rem 0;
+    padding: 0.5rem 0.15rem;
   }
   .blackcover .product .contained span.social {
     width: 80%;
     margin: 0.5rem 0;
+  }
+  .blackcover .product span.close {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1.5px 0 0 #000, 0 -1.5px 0 #000, 0 1.5px 0 #000, -1.5px 0 0 #000;
   }
 }

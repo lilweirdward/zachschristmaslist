@@ -24,21 +24,21 @@
 			<img data-bind="attr: { src: imageSrc }" class="item">
 			<div class="contained">
 				<h1 id="product_name" data-bind="text: name"></h1>
-				<a href="#" class="button">Buy | <span data-bind="text: price"></span></a>
+				<a href="#" class="button"><span data-bind="text: price"></span></a>
 				<p>
-					<em>Description:</em> <span data-bind="text: description"></span>
+					<em>Description:</em> <span data-bind="html: description"></span>
 				</p>
-				<p>
-					Interest Score: <strong data-bind="text: interestScore"></strong>/10
-				</p>
+				<h2>Interest Level</h2>
+				<div class="progress-wrap" data-bind="attr: { 'data-progress-percent': interestScore, title: interestScore() + '/10' }">
+					<div class="progress-bar"></div>
+				</div>
 			</div>
 			<span class="close">x</span>
 		</div>
 	</div>
     <div id="area">
 		<div class="section">
-			<!-- <div class="container header">
-			</div> -->
+			<!-- <div class="container header"> -->
 			<div class="container">
 				<h1>
 					Intro
@@ -163,6 +163,10 @@
 				$('.product span.close').click(function() {
 					$('.blackcover').removeClass('on');
 				});
+				moveProgressBar();
+				$(window).resize(function() {
+					moveProgressBar();
+				});
 			}
 
 			self.gadgetsFinished = function(value) {
@@ -224,6 +228,15 @@
 		}
 
 		ko.applyBindings(new ChristmasListViewModel());
+
+		function moveProgressBar() {
+			var getPercent = (($('.progress-wrap').data('progress-percent') * 10) / 100);
+			var getProgressWrapWidth = $('.progress-wrap').width();
+			var progressTotal = getPercent * getProgressWrapWidth;
+			$('.progress-bar').stop().animate({
+			    left: progressTotal
+			}, 500);
+		}
 
 		$(document).ready(function() {
 			$.fn.snow({ newOn: 300 });
