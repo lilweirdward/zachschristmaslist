@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="ie"> <![endif]-->
+<!--[if IE 7]>         <html class="ie"> <![endif]-->
+<!--[if IE 8]>         <html class="ie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html>         <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 	<title>Zach's Christmas List</title>
@@ -55,7 +58,7 @@
 				</p>
 				<p>
 					This website also represents a lot of significant improvements and changes in my artistic and development style.
-					I mean, just look at <a href="#">how <em>different</em> my website was last year</a>! Anyway, I know that probably
+					I mean, just look at <a href="Christmas Site/index.html">how <em>different</em> my website was last year</a>! Anyway, I know that probably
 					doesn't mean a lot to you, dear reader, but I'm quite proud of my work, and if you're impressed, I'd probably
 					appreciate a little recognition :)
 				</p>
@@ -239,6 +242,10 @@
 		}
 
 		$(document).ready(function() {
+			if ($('html').hasClass('ie')) {
+				window.location.replace('ie.html');
+			}
+
 			$.fn.snow({ newOn: 300 });
 
 			// $(".category").mousewheel(function(event) {
