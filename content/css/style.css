@@ -208,6 +208,11 @@ div.logo img {
   font-size: 1.75rem;
 }
 
+.section.error h1 {
+  color: white;
+  font-size: 2rem;
+}
+
 .blackcover.on {
   opacity: 1;
   z-index: 4;

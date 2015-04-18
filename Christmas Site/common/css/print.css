@@ -1,0 +1,117 @@
+body {
+	margin: 0;
+	font-family: 'Times New Roman';
+	font-size: 100%;
+}
+
+h1.make-christmas {
+	font-family: 'Old English Text MT';
+	font-size: 4rem;
+	color: #2EB020;
+	text-shadow: 0.5rem 0.125rem #000;
+}
+
+h1 {
+	font-family: Forte;
+	font-size: 2rem;
+	color: #D90000;
+	text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+	text-align: center;
+}
+
+img.floor {
+	display: none;
+}
+
+span.make-christmas {
+	font-size: inherit;
+	font-family: 'Old English Text MT';
+	color: #2EB020;
+	text-shadow: 2px 2px #000;
+}
+
+span.price {
+	font-size: 1.5rem;
+	color: #2EB020;
+}
+
+.page-break {
+	display: block;
+	page-break-before: always;
+}
+
+.section {
+	margin: 0;
+	padding: 5rem 0;
+	clear: both;
+}
+
+
+.section.header {
+	display: none !important;
+}
+
+.container {
+	max-width: 75%;
+	margin: 0 auto;
+	padding: 15px;
+	background-color: white;
+}
+
+.container.logo {
+	background-color: transparent;
+	text-align: center;
+	padding-bottom: 0;
+}
+
+.secret {
+	display: none;
+}
+
+.row {
+	overflow: auto;
+}
+
+.row.center {
+    text-align: center;
+}
+
+.column {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.35);
+	border: 1px solid rgba(0,0,0,0.15);
+	border-radius: 5px;
+	margin: 0;
+}
+
+.size-12 {
+	max-width: 95%;
+	text-align: center;
+}
+
+.size-6 {
+	text-align: center;
+	width: 45%;
+}
+
+.size-6 > h1 {
+	font-size: 1.5rem;
+}
+
+.size-4 {
+	text-align: center;
+	width: 29%;
+}
+
+.size-4 > h1 {
+	font-size: 1.25rem;
+}
+
+.small-justify {
+	text-align: left;
+	font-size: 0.75rem;
+}
